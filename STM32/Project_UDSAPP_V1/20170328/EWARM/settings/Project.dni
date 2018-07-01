@@ -1,0 +1,183 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=1148222919
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000000
+LeaveTargetRunning=_ 0
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[CodeCoverage]
+Enabled=_ 0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[struct_types]
+Fmt0=CanRxMsg-ExtId	4	0
+Fmt1=UDS_CANrxBuf_t-Ident	4	0
+Fmt2=UDS_CANrxBuf_t-mask	4	0
+[array_types]
+Fmt0=u8[8]	4	0
+Fmt1=uint8_t[1026]	4	0
+Fmt2=uint8_t[8]	4	0
+[watch_formats]
+Fmt0={W}0:*(pDataCopy)	4	0
+Fmt1={W}0:CO_OD_ROM.CANNodeID	4	0
+Fmt2={W}0:LSS->IDNumber	4	0
+Fmt3={W}0:RXF	4	0
+Fmt4={W}0:RXM	4	0
+Fmt5={W}0:can_filterinit.CAN_FilterIdHigh	4	0
+Fmt6={W}0:can_filterinit.CAN_FilterIdLow	4	0
+Fmt7={W}0:flags	1	0
+Fmt8={W}0:ident	4	0
+Fmt9={W}0:localAddr	4	0
+Fmt10={W}0:mask	4	0
+Fmt11={W}0:processflags	1	0
+Fmt12={W}0:rcvMsgIdent	4	0
+Fmt13={W}0:workflagspre	1	0
+Fmt14={W}1:*(uint16_t *)&pMsg->Data[4]	4	0
+Fmt15={W}1:CRC16Hi	4	0
+Fmt16={W}1:CRC16Lo	4	0
+Fmt17={W}1:CanRxBuf[CAN_Rx_ptr_out].ExtId	4	0
+Fmt18={W}1:FlashDestination	4	0
+Fmt19={W}1:UDS_RAM.crc32	4	0
+Fmt20={W}1:aa	4	0
+Fmt21={W}1:can_addr	4	0
+Fmt22={W}1:crc16val	4	0
+Fmt23={W}1:memoryAddress	4	0
+Fmt24={W}1:memorySize	4	0
+Fmt25={W}1:pData[4]	4	0
+Fmt26={W}1:pData[5]	4	0
+Fmt27={W}1:pData[6]	4	0
+Fmt28={W}1:pData[7]	4	0
+Fmt29={W}1:pMsg->Data[5]	4	0
+Fmt30={W}1:ret	4	0
+Fmt31={W}42:temper	3	0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+Title_0=I0
+Symbol_0=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[EventLog]
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\UDS\UDS_Config.c}.284.1" 0 0 1 "" 0 "" 0
+Count=1
+[Aliases]
+Count=0
+SuppressDialog=0

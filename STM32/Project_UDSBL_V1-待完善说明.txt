@@ -1,0 +1,13 @@
+P2CAN_Server 对于服务器接收到请求消息后发出响应消息的性能要求	要求值50ms	未做响应性能测试
+P2*CAN_Server 当服务器发送否定响应码NRC=0x78，到服务器发出响应消息时间的性能要求	要求值5000ms	暂时不存在0x78的否定响应未做处理
+NRC=0x78	requestCorrectlyReceived-ResponsePending 
+
+安全访问 SecurityAccess(0x27) ISO14229-1 9.4.4 Table46 NRC=0x36 exceededNumberOfAttempts NRC=0x37 requiredTimeDelayNotExpired 暂未处理
+
+多帧传输时间参数 ISO15765-2 6.7.1 图6  时间常数暂时实现N_Bs N_Cr基本照搬中汽研的，N_As N_Br N_Ar未做处理，需进一步完善。
+CAN发送暂时采用查询发送 后面考虑采用CAN发送完成中断。避免出现发送阻塞。
+N_As 是指发送方CAN帧发送时间，如果采用CAN发送完成中断，应该要实现N_As时间参数功能。
+
+暂不支持全双工模式，当前为半双工通讯模式，只开启一个循环来处理UDS的接受与发送处理
+
+功能地址（1对多通信）仅仅对单帧的通信支持 单目前程序，未对接收到的功能地址多帧进行屏蔽
